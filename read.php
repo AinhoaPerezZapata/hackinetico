@@ -19,16 +19,14 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM accounts')->fetchColumn();
 <?=template_header('Read')?>
 
 <div class="content read">
-	<h2>Read Contacts</h2>
-	<a href="create.php" class="create-contact">Create Contact</a>
+	<h2>Sesiones</h2>
 	<table>
         <thead>
             <tr>
-                <td>#</td>
-                <td>Name</td>
+                <td>ID</td>
+                <td>Nombre de usuario</td>
+                <td>Contraseña</td>
                 <td>Email</td>
-                <td>Phone</td>
-                <td>Title</td>
                 <td></td>
             </tr>
         </thead>

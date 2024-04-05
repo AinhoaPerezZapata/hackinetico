@@ -37,33 +37,33 @@ $stmt->close();
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Profile Page</title>
+		<title>Perfil</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				<h1><a href="home.php"><i class="fas fa-house"></i>Inicio</a></h1>
+				<a href="profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
+				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Desloguear</a>
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Profile Page</h2>
+			<h2></i>Perfil</h2>
 			<div>
-				<p>Your account details are below:</p>
+				<p>Detalles de la cuenta:</p>
 				<table>
 					<tr>
-						<td>Username:</td>
+						<td>Nombre de usuario:</td>
 						<td><?=htmlspecialchars($_SESSION['name'], ENT_QUOTES)?></td>
 					</tr>
 					<tr>
-						<td>Password:</td>
+						<td>Contraseña:</td>
 						<td><?=htmlspecialchars($password, ENT_QUOTES)?></td>
 					</tr>
 					<tr>
-						<td>Email:</td>
+						<td>Correo electronico:</td>
 						<td><?=htmlspecialchars($email, ENT_QUOTES)?></td>
 					</tr>
 				</table>
